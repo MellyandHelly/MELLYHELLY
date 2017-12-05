@@ -1,0 +1,245 @@
+
+h1{
+  font-size: 2rem;
+  position: fixed;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: auto;
+
+}
+
+h2{
+  font-size: 1rem;
+  float: right;
+  margin-right: 10%;
+  margin-top: 2%;
+
+}
+
+/*body*/
+
+body{
+  background: hsla(45, 10%, 92%, 0.3);
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  font-size: 100%;
+}
+
+/*header*/
+
+/*  background: rgba(255,215,0,0.2);*/
+
+header{
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  background: hsla(45, 10%, 92%, 100);
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+
+}
+
+.gradientback{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 90px;
+    width:100%;
+    height:10px;
+    background: linear-gradient(to bottom, hsla(45, 10%, 92%, 100), hsla(45, 10%, 92%, 0.3));
+    border-bottom-style: solid;
+    border-width: 0.1px;
+    border-color: lightgrey;
+
+}
+
+/*NAVIGATION*/
+
+.navigation {
+  background: hsla(45, 10%, 92%, 100);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 15.5%;
+  margin-top: 100px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: lightgrey;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 0.5s;
+
+}
+
+.navigation.active {
+  transform: translateX(0%);
+}
+
+ul {
+  list-style: none;
+  margin: 5%;
+  padding: 0;
+}
+
+li {
+  /* oben/unten links/rechts */
+  margin: 5%;
+  padding: 5%;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 1.9vw;
+}
+
+li:hover{
+  background-color: yellow;
+}
+
+li:active {
+    background-color: orange;
+}
+
+li:visited {
+    background-color: red;
+}
+
+/*LOGO & MENUE*/
+
+#LOGO {
+  position: absolute;
+  display: inline;
+  width: auto;
+  height: 80px;
+  padding-left: 10%;
+  padding-top: 70px;
+  margin: 0;
+  z-index: 20;
+}
+
+#MENUE {
+  position: absolute;
+  display: inline;
+  width: auto;
+  height: 20px;
+  margin-top: 70px;
+  margin-right: 14%;
+  z-index: 20;
+}
+
+.open {
+  opacity: 100;
+}
+
+.open.active{
+  opacity: 0;
+}
+
+.close {
+  opacity: 0;
+}
+
+.close.active{
+  opacity: 100;
+}
+
+/*Raster*/
+
+
+.parent {
+  margin-top: 100px;
+  display: inline;
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 0.1px;
+  border-color: lightgrey;
+}
+
+.container {
+
+  background-color: white;
+  display: grid;
+  grid-template-columns:33.33% 33.33% 33.33%;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.images{
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+}
+.images: before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+img{
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*Bilder*/
+
+#Bild1{
+  height: auto;
+  width: 70%;
+  transform: translate(80%, 40%);
+}
+
+#Bild2{
+  height: auto;
+  width: 30%;
+  transform: translate(40%, 50%);
+}
+
+#Bild3{
+  display: flex;
+  height: auto;
+  width: 100%;
+  transform: translate(-30%, 20%);
+}
+
+#Bild4{
+  height: auto;
+  width: 200%;
+  /*10%nach rechts, 40%nach oben*/
+  transform: translate(10%, -40%);
+}
+
+#Bild5{
+  height: auto;
+  width: 30%;
+}
+
+#Bild6{
+  display: flex;
+  height: auto;
+  width: 180%;
+  transform: translate(-20%, -70%);
+}
